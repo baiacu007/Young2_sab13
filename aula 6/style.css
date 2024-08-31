@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=SUSE:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff000f;
+background-image: linear-gradient(147deg, #ff000f 0%, #FF2525 74%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px black;
+    height: 60%;
+    max-width: 28%;
+    display: grid;
+    place-items: center;
+}
+main.container div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}
+main.container div span{
+    font-size: 26px;
+}
+main.container div.botoes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+main.container div.botoes button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.atender{
+    background-color: #16A085;
+}
+.recusar{
+    background-color: #FF2525;
+}
+.atender:hover{
+    background-color: #10725f;
+    transition: background 0.2s ease-in-out;
+    
+}
+.recusar:hover{
+    background-color: aliceblue;
+    color: aliceblue;
+}
