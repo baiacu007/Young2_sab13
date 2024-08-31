@@ -59,7 +59,7 @@ main.container div.botoes button{
 .atender:hover{
     background-color: #10725f;
     transition: background 0.2s ease-in-out;
-    
+    cursor: pointer;
 }
 .recusar:hover{
     background-color: aliceblue;
