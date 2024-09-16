@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "SUSE", sans-serif;
+    font-family: "Libre Baskerville", serif;
 }
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #ff000f;
-background-image: linear-gradient(147deg, #ff000f 0%, #FF2525 74%);
+    background-color: #FFFFFF;
+background-image: linear-gradient(45deg, #FFFFFF 0%, #6284FF 29%, #ff4040 53%, #6284ff 75%, #ffffff 100%);
 
     display: flex;
     align-items: center;
@@ -64,4 +64,5 @@ main.container div.botoes button{
 .recusar:hover{
     background-color: aliceblue;
     color: aliceblue;
+    cursor: not-allowed; a
 }
