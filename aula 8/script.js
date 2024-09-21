@@ -8,5 +8,5 @@ button.addEventListener('click', somar)
 
 function somar(){
     soma = parseInt(N1.value) + parseInt(N1.value)
-    result = soma
+    result.value = soma
 }
