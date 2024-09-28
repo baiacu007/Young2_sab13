@@ -41,7 +41,12 @@ function multi() {
 }
 
 function divi() {
-    divis = parseInt(N7.value) / parseInt(N8.value) 
-    RESULTADO_di.value = divis
+    if (N8.value != 0){
+        divis = parseInt(N7.value) / parseInt(N8.value) 
+        RESULTADO_di.value = divis
+    }
+    else{
+        window.alert('Não existe divisão por 0')
+    }
 }
 
