@@ -15,11 +15,11 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(190, 190, 190);
+    background-color: #842c9b;
 }
 
 nav{
-    background-color: rgb(200, 200, 200);
+    background-color: #4d0066;
     color: white;
 }
 
@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav ul li a{
-    color: gray;
+    color: white;
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
@@ -40,7 +40,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: rgb(93, 93, 93);
+    background-color: #5f0f78;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
 }
@@ -48,6 +48,10 @@ nav ul li a:hover{
 section{
     height: 100vh;
     text-align: center;
+}
+
+section.section1 div.direita img{
+    width: 500px;
 }
 
 section.section1{
@@ -65,8 +69,8 @@ section.section1 div.direita{
     gap: 30px;
 }
 section.section1 div.esquerda{
-    background-color: black ;
-    border-right: 2px solid #373737;
+    background-color: #721d8a ;
+    border-right: 2px solid #5f0f78;
 }
 h1{
     font-size: 40px;
@@ -77,7 +81,7 @@ p{
 }
 
 section.section2{
-    background-color: black;
+    background-color: #721d8a;
     display: grid;
     place-items: center;
 }
@@ -89,6 +93,104 @@ section.section2 div.galeria{
 }
 
 div.galeria img{
-    height: 300px;
+    height: 200px;
     object-fit: cover;
+}
+
+section.section3 {
+    display: grid;
+    place-items: center;
+}
+
+section.section3 div.forms{
+    display: grid;
+    background-color: #721d8a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+form{
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea{
+    background-color: #4d0066;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #4d0066 ;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #5f0f78;
+    transition: background 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #4d0066;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+a.top-page{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 30px;
+    background-color: #9eaeaa;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #eeaeaa;
+    opacity: 0.4;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+a.top-page:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+ul li a{
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+ul li a:hover{
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+h2{
+    color: white;
 }
