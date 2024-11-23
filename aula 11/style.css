@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #842c9b;
+}
+
+nav{
+    background-color: #4d0066;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav ul li a:hover{
+    background-color: #5f0f78;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: white;
+}
+
+section{
+    height: 100vh;
+    text-align: center;
+}
+
+section.section1 div.direita img{
+    width: 500px;
+}
+
+section.section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke   ;
+}
+
+section.section1 div.esquerda,
+section.section1 div.direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+section.section1 div.esquerda{
+    background-color: #721d8a ;
+    border-right: 2px solid #5f0f78;
+}
+h1{
+    font-size: 40px;
+    width: 70%;
+}
+p{
+    width: 60%;
+}
+
+section.section2{
+    background-color: #721d8a;
+    display: grid;
+    place-items: center;
+}
+
+section.section2 div.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+div.galeria img{
+    height: 200px;
+    object-fit: cover;
+}
+
+section.section3 {
+    display: grid;
+    place-items: center;
+}
+
+section.section3 div.forms{
+    display: grid;
+    background-color: #721d8a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+form{
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea{
+    background-color: #4d0066;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+
+}
+
+button{
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #4d0066 ;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #5f0f78;
+    transition: background 0.3s ease-in-out;
+}
+
+footer{
+    background-color: #4d0066;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+a.top-page{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 30px;
+    background-color: #9eaeaa;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #eeaeaa;
+    opacity: 0.4;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+a.top-page:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+ul li a{
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+ul li a:hover{
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+h2{
+    color: white;
+}
