@@ -47,3 +47,7 @@ body{
   border-radius: 5px;
   margin-left: 10px;
 }
+
+button{
+  text-transform: capitalize;
+}
