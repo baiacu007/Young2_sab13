@@ -1,0 +1,49 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #4d0066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painel{
+  background-color: rgb(184, 172, 192);
+  width: 500px;
+  height: 500px;  
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+#sin{
+  height: 40px;
+  width: 120px;
+  background-color: #721d8a;
+  border: 2px solid rgb(184, 172, 192);
+  color: white;
+  border-radius: 5px;
+  margin-left:-130px;
+}
+
+
+#nao{
+  position: absolute;
+  height: 40px;
+  width: 120px;
+  background-color: #721d8a;
+  border: 2px solid rgb(184, 172, 192);
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+}
