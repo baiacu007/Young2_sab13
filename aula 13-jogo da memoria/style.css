@@ -38,7 +38,37 @@ h1{
     font-size: 28px;
 }
 
- div.conteiner{
+ div.container{
     display: grid;
     gap: 15px;
 }
+
+#mensagem{
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px; 
+}
+
+button{
+    padding: 10px;
+    border-radius:5px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: background 0.3s ease-in-out
+}
+
+button:hover{
+    background-color: rgb(45, 45, 45);
+    transition: background 0.3s ease-in-out
+}
+
+#mensagem-texto{
+    text-transform: capitalize;
+    color: rgb(204, 22, 22);
+    font-weight: bold;
+}
+
