@@ -1,3 +1,4 @@
+// ELEMENTOS NA TELA
 const NIVEL_DISPLAY = document.querySelector('#nivel')
 const VIDAS_DISPLAY = document.querySelector('#vidas')
 const MENSAGEM_CONTAINER = document.querySelector('#mensagem')
@@ -51,19 +52,18 @@ function gerar_pares_aleatorios(total) {
     return NUMEROS
 }
 
-
 function revelar_quadrado(event){
-    if (bloqueio_clique) return
+    if(bloqueio_clique) return
 
     const QUADRADO = event.target
-    if (quadrados_virados.includes(QUADRADO) || QUADRADO.textContent != '') return
+    if(quadrados_virados.includes(QUADRADO) || QUADRADO.textContent != '') return
 
     QUADRADO.textContent = QUADRADO.dataset.number
     quadrados_virados.push(QUADRADO)
 
-    if(quadrados_virados.length == 2)
-        console.log('verificar')
+    if(quadrados_virados.length == 2){
+        console.log('ai papai')
+    }
 }
 
 iniciar_nivel()
-
