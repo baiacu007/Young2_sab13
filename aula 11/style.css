@@ -15,11 +15,11 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #842c9b;
+    background-color: #6f6f6f;
 }
 
 nav{
-    background-color: #4d0066;
+    background-color: #585858;
     color: white;
 }
 
@@ -40,7 +40,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #5f0f78;
+    background-color: #626262;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
 }
@@ -57,7 +57,7 @@ section.section1 div.direita img{
 section.section1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: whitesmoke   ;
+    color: black   ;
 }
 
 section.section1 div.esquerda,
@@ -69,8 +69,8 @@ section.section1 div.direita{
     gap: 30px;
 }
 section.section1 div.esquerda{
-    background-color: #721d8a ;
-    border-right: 2px solid #5f0f78;
+    background-color: #767676 ;
+    border-right: 2px solid #141414;
 }
 h1{
     font-size: 40px;
@@ -81,7 +81,7 @@ p{
 }
 
 section.section2{
-    background-color: #721d8a;
+    background-color: #767676;
     display: grid;
     place-items: center;
 }
@@ -104,7 +104,7 @@ section.section3 {
 
 section.section3 div.forms{
     display: grid;
-    background-color: #721d8a;
+    background-color: #373737;
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
@@ -116,7 +116,7 @@ form{
 }
 
 input, textarea{
-    background-color: #4d0066;
+    background-color: white;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -134,17 +134,17 @@ button{
     font-size: 16px;
     font-weight: bold;
     text-transform: capitalize;
-    background-color: #4d0066 ;
+    background-color: #1c1b1b ;
     transition: background 0.3s ease-in-out;
 }
 
 button:hover{
-    background-color: #5f0f78;
+    background-color: #232222;
     transition: background 0.3s ease-in-out;
 }
 
 footer{
-    background-color: #4d0066;
+    background-color: #2d2d2d;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -162,14 +162,14 @@ a.top-page{
     right: 30px;
     bottom: 30px;
     font-size: 30px;
-    background-color: #9eaeaa;
-    color: white;
+    background-color: #626262;
+    color: black;
     text-decoration: none;
     width: 50px;
     height: 50px;
     border-radius: 5px;
     text-align: center;
-    border: 1px solid #eeaeaa;
+    border: 1px solid black;
     opacity: 0.4;
     transition: opacity 0.5s ease, box-shadow 0.5s ease;
     box-shadow: 0px 0px 0px rgb(255, 255, 255);
