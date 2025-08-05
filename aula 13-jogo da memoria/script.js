@@ -4,6 +4,7 @@ const VIDAS_DISPLAY = document.querySelector('#vidas')
 const MENSAGEM_CONTAINER = document.querySelector('#mensagem')
 const MENSAGEM_TEXTO = document.querySelector('#mensagem-texto')
 const GAME_CONTAINER = document.querySelector('#game-container')
+const REINICIAR_BOTAO = document.querySelector('button')
 
 // VARIÁVEIS DE INICIO DO JOGO
 let nivel = 1
@@ -62,8 +63,62 @@ function revelar_quadrado(event){
     quadrados_virados.push(QUADRADO)
 
     if(quadrados_virados.length == 2){
-        console.log('ai papai')
+        verificar_pares()
     }
 }
+
+function verificar_pares() {
+    const [primeiro, segundo] = quadrados_virados
+    bloqueio_clique = true
+
+    if(primeiro.dataset.number === segundo.dataset.number){
+        pares_encontrados++
+        quadrados_virados = []
+        bloqueio_clique = false
+
+        if(pares_encontrados == NIVEIS[nivel-1].quadrados/2){
+            avancar_nivel()
+        }
+    }
+    else{
+        vidas--
+        VIDAS_DISPLAY.textContent = vidas
+        setTimeout(()=>{
+            primeiro.textContent = ''
+            segundo.textContent = ''
+            quadrados_virados = []
+            bloqueio_clique = false
+            if(vidas === 0){
+                derrota('Game Over!!!')
+            }
+        }, 1000)
+    }
+}
+
+function avancar_nivel(){
+    if(nivel < NIVEIS.length){
+        nivel++
+        iniciar_nivel()
+    }
+    else{
+        derrota('You Win!!')
+    }
+}
+
+function derrota (mensagem){
+    MENSAGEM_TEXTO.textContent = mensagem
+    MENSAGEM_CONTAINER.id = ''
+    Array.from(document.querySelector('.quadrado')).forEach(quadrado => {quadrado.style.display = 'none'})
+    // reiniciar_jogo()
+}
+
+function reiniciar_jogo() {
+    nivel = 1
+    iniciar_nivel()
+    MENSAGEM_CONTAINER.id = 'mensagem'
+}
+
+REINICIAR_BOTAO.addEventListener('click', reiniciar_jogo)
+    
 
 iniciar_nivel()

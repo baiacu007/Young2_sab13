@@ -44,12 +44,7 @@ h1{
 }
 
 #mensagem{
-    display: flex;
-    text-align: center; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap:15px; 
+    display: none;
 }
 
 button{
@@ -72,3 +67,10 @@ button:hover{
     font-weight: bold;
 }
 
+.escondido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
