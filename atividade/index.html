@@ -24,3 +24,117 @@
 
 </body>
 </html>
+//provisorio
+Algoritmo "carro"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 19/02/2026
+Var
+// Seção de Declarações das variáveis 
+n1, n2:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva("qual a distancia percorrida pelo carro? ")
+leia(n1)
+escreva("quantos litros de combustivel foram gastos pelo carro? ")
+leia(n2)
+escreva(n2/n1," <- essa foi a quantia de combustivel gasto pela distancia")
+
+Fimalgoritmo
+
+  Algoritmo "Conversor de dinheiro"
+Var
+   reais, dolar, euro, libra, peso: real
+Inicio
+   escreva("Quantos reais você tem? ")
+   leia(reais)
+
+
+   escreva("Qual é o valor de 1 dólar em reais? ")
+   leia(dolar)
+   escreva("Qual é o valor de 1 euro em reais? ")
+   leia(euro)
+   escreva("Qual é o valor de 1 libra em reais? ")
+   leia(libra)
+   escreva("Qual é o valor de 1 peso em reais? ")
+   leia(peso)
+
+
+   escreval("Você tem ", reais / dolar:0:2, " dólares")
+   escreval("Você tem ", reais / euro:0:2, " euros")
+   escreval("Você tem ", reais / libra:0:2, " libras")
+   escreval("Você tem ", reais / peso:0:2, " pesos")
+Fimalgoritmo
+
+  Algoritmo "roubo"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 19/02/2026
+Var
+// Seção de Declarações das variáveis 
+acrescimo, venda, custo:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva("fale o custo de produção: ")
+leia(custo)
+escreva("escreva a porcentagem do lucro do produto: ")
+leia(venda)
+acrescimo <- custo + (custo * venda / 100)
+escreva("valor final do produto: ",acrescimo:0:2)
+
+Fimalgoritmo
+
+  Algoritmo "triangulo"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 19/02/2026
+Var
+// Seção de Declarações das variáveis
+n1, n2, area: real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva("qual a base do seu triangulo? ")
+leia(n1)
+escreva("qual a altura do triangulo? ")
+leia(n2)
+escreva(n1*n2/2)
+leia(area)
+
+Fimalgoritmo
+
+  Algoritmo "vendedor"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 19/02/2026
+Var
+// Seção de Declarações das variáveis 
+nome:caractere
+vendas, comissao, fixo, resultado:real
+final:real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreva("escreva seu nome: ")
+leia(nome)
+escreva("qual seu salario fixo? ")
+leia(fixo)
+escreva("qual seu salario final? ")
+leia(final)
+escreva("qual foi sua renda mensal com vendas em R$? ")
+leia(vendas)
+comissao <- vendas*0.15
+final <- fixo+comissao
+escreva("|renda final: ", final, " |nome: ",nome," |salario fixo: ",fixo)
+
+Fimalgoritmo
